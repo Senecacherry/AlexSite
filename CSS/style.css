@@ -1,0 +1,52 @@
+body {
+    background-color:#222 !important;
+    color: white !important;
+}
+
+.card {
+    border: none !important;
+}
+
+.card-body {
+    background-color: rgb(88, 88, 88) !important;
+    padding: 5px !important;
+}
+
+.card-header.collapsed  i {
+    transform: rotate(180deg) !important;
+}
+
+.card-header  i {
+    transition: all 356ms;
+    transform: rotate(0deg);
+}
+
+.cardMarginBottom {
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: calc(100vw - 10px) !important;
+}
+
+.iconStyle {
+    float: right;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+.secondHeaderStyle {
+    background-color: rgb(48, 47, 47) !important;
+    border: none;
+    color: #CCC !important;
+    cursor: pointer;
+}
+
+.titleStyle {
+    background-color: rgb(48, 47, 47);
+    border-radius: 7px;
+    padding: 10px;
+    padding-left: 15px;
+}

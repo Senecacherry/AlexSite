@@ -8,8 +8,10 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="http://unpkg.com/vue/dist/vue.js"></script>
     <script src="http://unpkg.com/portal-vue"></script>
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -27,6 +29,9 @@
             </div>
         </div>
     </nav>
+    <div class="container">
+    <div class="row">
+    <div class="col-12"
     <address>
         Based in Denver, CO<br />
         Available for remote work<br />
@@ -37,14 +42,18 @@
     <address>
         <strong>Email:</strong> <a href="mailto:Support@example.com">Alex.Rangel0710@gmail.com</a><br />
     </address>
-
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
     <h1>Rates</h1>
-
+    </div>
+</div>
     <div class="row">
         <div class="col-sm-4">
-            <div class="card">
+            <div class="card cardMarginBottom cardMarginLeft">
                 <div class="card-body">
-                    <h5 class="card-title">Live Sound</h5>
+                    <h5 class="card-title titleStyle">Live Sound</h5>
                     <p class="card-text">
                         <ul>
                             <li>$35/HR</li>
@@ -54,13 +63,31 @@
                             <li>$75/HR After 16HR</li>
                         </ul>
                     </p>
+                    <div >
+                        <div class="card">
+                          <div class="card-header secondHeaderStyle collapsed" data-toggle="collapse" data-target=".liveSoundAcc">
+                            <h5 class="mb-0">
+                              <button class="btn text-light" aria-expanded="true" aria-controls="collapseOne">
+                                What is Live Sound?
+                              </button>
+                              <i class="fa fa-caret-up iconStyle"></i>
+                            </h5>
+                          </div>
+                      
+                          <div class="liveSoundAcc collapseOne collapse" aria-labelledby="liveSoundAcc" data-parent=".liveSoundAcc">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="card">
+            <div class="card cardMarginBottom">
                 <div class="card-body">
-                    <h5 class="card-title">Recording</h5>
+                    <h5 class="card-title titleStyle">Recording</h5>
                     <p class="card-text">
                         <ul>
                             <li>$100 Per Recording</li>
@@ -68,13 +95,31 @@
                             <li>$70 Per Track For Whole Set</li>
                         </ul>
                     </p>
+                    <div>
+                        <div class="card">
+                          <div class="card-header secondHeaderStyle collapsed" data-toggle="collapse" data-target=".recordingAcc">
+                            <h5 class="mb-0">
+                              <button class="btn text-light" aria-expanded="true" aria-controls="collapseTwo">
+                                What is Recording?
+                              </button>
+                              <i class="fa fa-caret-up iconStyle"></i>
+                            </h5>
+                          </div>
+                      
+                          <div class="recordingAcc collapseTwo collapse" aria-labelledby="recordingAcc" data-parent=".recordingAcc">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="card">
+            <div class="card cardMarginBottom">
                 <div class="card-body">
-                    <h5 class="card-title">Studio</h5>
+                    <h5 class="card-title titleStyle">Studio</h5>
                     <p class="card-text">
                         <ul>
                             <li>$35/HR</li>
@@ -84,55 +129,123 @@
                             <li>Includes on the fly EQ, comp, reverb, limit(basic outboard or plugins)</li>
                         </ul>
                     </p>
+                    <div>
+                        <div class="card">
+                          <div class="card-header secondHeaderStyle collapsed" data-toggle="collapse" data-target=".studioAcc">
+                            <h5 class="mb-0">
+                              <button class="btn text-light" aria-expanded="true" aria-controls="collapseThree">
+                                What is Studio work?
+                              </button>
+                              <i class="fa fa-caret-up iconStyle"></i>
+                            </h5>
+                          </div>
+                          <div class="studioAcc collapseThree collapse" aria-labelledby="studioAcc" data-parent=".studioAcc">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-4">
-            <div class="card">
+            <div class="card cardMarginBottom cardMarginLeft">
                 <div class="card-body">
-                    <h5 class="card-title">Mixing</h5>
+                    <h5 class="card-title titleStyle">Mixing</h5>
                     <p class="card-text">
                         <ul>
                             <li>$125 Per Track, including time and tune</li>
                             <li>$200 Surround</li>
                         </ul>
                     </p>
+                    <div>
+                        <div class="card">
+                          <div class="card-header secondHeaderStyle collapsed" data-toggle="collapse" data-target=".studioAcc">
+                            <h5 class="mb-0">
+                              <button class="btn text-light" aria-expanded="true" aria-controls="collapseThree">
+                                What is Mixing work?
+                              </button>
+                              <i class="fa fa-caret-up iconStyle"></i>
+                            </h5>
+                          </div>
+                          <div class="studioAcc collapseThree collapse" aria-labelledby="studioAcc" data-parent=".studioAcc">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="card">
+            <div class="card cardMarginBottom">
                 <div class="card-body">
-                    <h5 class="card-title">Mastering</h5>
+                    <h5 class="card-title titleStyle">Mastering</h5>
                     <p class="card-text">
                         <ul>
                             <li>$85 Per Track</li>
                             <li>$150 Track Surround</li>
                         </ul>
                     </p>
+                    <div>
+                        <div class="card">
+                          <div class="card-header secondHeaderStyle collapsed" data-toggle="collapse" data-target=".mixingAcc">
+                            <h5 class="mb-0">
+                              <button class="btn text-light" aria-expanded="true" aria-controls="collapseFour">
+                                What is Mixing work?
+                              </button>
+                              <i class="fa fa-caret-up iconStyle"></i>
+                            </h5>
+                          </div>
+                          <div class="mixingAcc collapseFour collapse" aria-labelledby="mixingAcc" data-parent=".mixingAcc">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="card">
+            <div class="card cardMarginBottom">
                 <div class="card-body">
-                    <h5 class="card-title">Simple Sample</h5>
+                    <h5 class="card-title titleStyle">Simple Sample</h5>
                     <p class="card-text">
                         <ul>
                             <li>$50/HR</li>
                         </ul>
                     </p>
+                    <div>
+                        <div class="card">
+                          <div class="card-header secondHeaderStyle collapsed" data-toggle="collapse" data-target=".simpleSampleAcc">
+                            <h5 class="mb-0">
+                              <button class="btn text-light" aria-expanded="true" aria-controls="collapseFive">
+                                What is Mixing work?
+                              </button>
+                              <i class="fa fa-caret-up iconStyle"></i>
+                            </h5>
+                          </div>
+                          <div class="simpleSampleAcc collapseFive collapse" aria-labelledby="simpleSampleAcc" data-parent=".simpleSampleAcc">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-3">
-            <div class="card">
+            <div class="card cardMarginBottom cardMarginLeft">
                 <div class="card-body">
-                    <h5 class="card-title">Remix/More Complex Sample</h5>
+                    <h5 class="card-title titleStyle">Remix/More Complex Sample</h5>
                     <p class="card-text">
                         <ul>
                             <li>2HR Max Work</li>
@@ -140,40 +253,90 @@
                             <li>$30/HR After</li>
                         </ul>
                     </p>
+                    <div>
+                        <div class="card">
+                          <div class="card-header secondHeaderStyle collapsed" data-toggle="collapse" data-target=".remixSampleAcc">
+                            <h5 class="mb-0">
+                              <button class="btn text-light" aria-expanded="true" aria-controls="collapseSix">
+                                What is Mixing work?
+                              </button>
+                              <i class="fa fa-caret-up iconStyle"></i>
+                            </h5>
+                          </div>
+                          <div class="remixSampleAcc collapseSix collapse" aria-labelledby="remixSampleAcc" data-parent=".remixSampleAcc">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-sm-3">
-            <div class="card">
+            <div class="card cardMarginBottom">
                 <div class="card-body">
-                    <h5 class="card-title">Post Production Work</h5>
+                    <h5 class="card-title titleStyle">Post Production Work</h5>
                     <p class="card-text">
                         <ul>
                             <li>$100/HR</li>
                             <li>$45/HR VO</li>
                         </ul>
                     </p>
+                    <div>
+                        <div class="card">
+                          <div class="card-header secondHeaderStyle collapsed" data-toggle="collapse" data-target=".postProductionAcc">
+                            <h5 class="mb-0">
+                              <button class="btn text-light" aria-expanded="true" aria-controls="collapseSeven">
+                                What is Mixing work?
+                              </button>
+                              <i class="fa fa-caret-up iconStyle"></i>
+                            </h5>
+                          </div>
+                          <div class="postProductionAcc collapseSeven collapse" aria-labelledby="postProductionAcc" data-parent=".postProductionAcc">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-sm-3">
-            <div class="card">
+            <div class="card cardMarginBottom">
                 <div class="card-body">
-                    <h5 class="card-title">Restoration</h5>
+                    <h5 class="card-title titleStyle">Restoration</h5>
                     <p class="card-text">
                         <ul>
                             <li>$55 Per Hour Worked</li>
                             <li>OR $150 Per Recorded Hour Worked On</li>
                         </ul>
                     </p>
+                    <div>
+                        <div class="card">
+                          <div class="card-header secondHeaderStyle collapsed" data-toggle="collapse" data-target=".restorationAcc">
+                            <h5 class="mb-0">
+                              <button class="btn text-light" aria-expanded="true" aria-controls="collapseEight">
+                                What is Mixing work?
+                              </button>
+                              <i class="fa fa-caret-up iconStyle"></i>
+                            </h5>
+                          </div>
+                          <div class="restorationAcc collapseEight collapse" aria-labelledby="restorationAcc" data-parent=".restorationAcc">
+                            <div class="card-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
             <div class="col-sm-3">
-                <div class="card">
+                <div class="card cardMarginBottom">
                     <div class="card-body">
-                        <h5 class="card-title">Stagehand</h5>
+                        <h5 class="card-title titleStyle">Stagehand</h5>
                         <p class="card-text">
                             <ul>
                                 <li>$25/HR</li>
@@ -181,11 +344,28 @@
                                 <li>$50/HR After 12</li>
                             </ul>
                         </p>
+                        <div>
+                            <div class="card">
+                              <div class="card-header secondHeaderStyle collapsed" data-toggle="collapse" data-target=".stagehandAcc">
+                                <h5 class="mb-0">
+                                  <button class="btn text-light" aria-expanded="true" aria-controls="collapseNine">
+                                    What is Mixing work?
+                                  </button>
+                                  <i class="fa fa-caret-up iconStyle"></i>
+                                </h5>
+                              </div>
+                              <div class="stagehandAcc collapseNine collapse" aria-labelledby="stagehandAcc" data-parent=".stagehandAcc">
+                                <div class="card-body">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                              </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </div>
+</div>
 </body>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
