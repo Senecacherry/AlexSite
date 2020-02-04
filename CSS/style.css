@@ -1,3 +1,14 @@
+.aboutMeHeading {
+    margin-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.aboutMeText {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 body {
     background-color:#222 !important;
     color: white !important;
@@ -22,11 +33,16 @@ body {
 }
 
 .cardMarginBottom {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.contactAddress {
+    margin-bottom: 15px;
+    text-align: center !important;
 }
 
 .container {
-    max-width: calc(100vw - 10px) !important;
+    max-width: calc(100vw - 20px) !important;
 }
 
 .iconStyle {
@@ -35,6 +51,11 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 10px;
+}
+
+.rateHeading {
+    padding-top: 15px;
+    text-align: center;
 }
 
 .secondHeaderStyle {
