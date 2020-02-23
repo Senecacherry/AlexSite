@@ -41,6 +41,10 @@ body {
     text-align: center !important;
 }
 
+.contactFormModalHeader {
+    background-color: rgb(88, 88, 88) !important;
+}
+
 .contactMeBtn {
     background-color: rgb(88, 88, 88) !important;
     border: none !important;

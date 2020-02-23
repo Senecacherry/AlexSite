@@ -3,5 +3,5 @@ function openContactModal() {
 }
 
 function SumbitContactForm() {
-
+$('#contactForm').submit();
 }
